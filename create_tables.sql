@@ -53,7 +53,7 @@ create table title_principals(
 );
 
 create table title_ratings(
-	tconst varchar primary key,
+	tconst varchar,
 	averageRating float,
 	numVotes int
 );
