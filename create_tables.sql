@@ -1,6 +1,6 @@
 create table name_basics(
 	nconst varchar,
-	primaryName	varchar,
+	primaryName varchar,
 	birthYear varchar,
 	deathYear varchar, 
 	primaryProfession varchar,
