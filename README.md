@@ -20,3 +20,7 @@ Using ```psql``` run 7 following commands:
 
 (you can also find them in ```copy_db``` file)
 
+### STEP 3
+
+Run ```title_basics improvement.sql``` and ```name_basics improvement.sql```
+
