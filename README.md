@@ -1,6 +1,6 @@
 # IMDB clone
 
-## How to set up database
+## How to set up the database
 
 ### STEP 1
 
