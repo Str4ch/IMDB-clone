@@ -12,5 +12,5 @@ Using ```psql``` run 7 following lines from ```copy_db``` file
 
 ### STEP 3
 
-Run ```title_basics improvement.sql``` and ```name_basics improvement.sql```
+Run 1) ```title_basics improvement.sql``` and 2) ```name_basics improvement.sql```
 
