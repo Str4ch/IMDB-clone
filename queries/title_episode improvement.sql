@@ -13,3 +13,6 @@ FOREIGN KEY (tconst) REFERENCES title_basics(tconst);
 ALTER TABLE title_episode
 ADD CONSTRAINT fk_parent_tconst
 FOREIGN KEY (parenttconst) REFERENCES title_basics(tconst);
+
+select * from title_episode
+limit 100;

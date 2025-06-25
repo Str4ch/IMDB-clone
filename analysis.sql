@@ -25,6 +25,6 @@ SELECT
   startyear,
   COUNT(*) AS count
 FROM title_basics
-WHERE startyear IS NOT NULL and startyear < 2025
+WHERE startyear IS NOT NULL
 GROUP BY genre, startyear
 ORDER BY startyear desc, count DESC;

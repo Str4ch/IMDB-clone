@@ -20,4 +20,3 @@ create index idx_original_title on title_basics(originaltitle);
 create index idx_runtime_min on title_basics(runtimeminutes);
 create index idx_genres on title_basics(genres);
 create index idx_title_id on title_basics(tconst);
-
