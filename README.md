@@ -4,15 +4,24 @@
 
 ### STEP 1
 
-Run sql script ```import queries/create_tables.sql```
+Run sql script ```import_queries/create_tables.sql```
 
 ### STEP 2
 
-Using ```psql``` run 7 following lines from ```import queries/rcopy_db``` file
+Using ```psql``` run 7 following lines from ```import_queries/copy_db.sh``` file.
+You have ```import_queries/drop_tables.sql``` supportive file, if necessary
 
 ### STEP 3
 
-Run first ```import queries/title_basics improvement.sql``` and after ```import queries/name_basics improvement.sql```
+First run ```improvement_queries/title_basics improvement.sql``` and then ```improvement_queries/name_basics improvement.sql```
 
 ### STEP 4
-Run ```import queries/title_akas improvement.sql``` ```import queries/title_crew improvement.sql``` ```import queries/title_episode improvement.sql``` ```import queries/title_principals improvement.sql``` ```import queries/title_ratings improvement.sql``` in any order
+Run
+
+```improvement_queries/title_akas improvement.sql```
+```improvement_queries/title_crew improvement.sql```
+```improvement_queries/title_episode improvement.sql```
+```improvement_queries/title_principals improvement.sql```
+```improvement_queries/title_ratings improvement.sql```
+
+(5 in total) in any order
