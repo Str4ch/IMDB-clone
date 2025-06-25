@@ -1,22 +1,18 @@
 # IMDB clone
 
-## How to set up database
+## How to set up the database
 
 ### STEP 1
 
-Run sql script ```CREATE_TABLES.sql```
+Run sql script ```create_tables.sql```
 
 ### STEP 2
 
-Using ```psql``` run 7 following commands:
+Using ```psql``` run 7 following lines from ```copy_db``` file
 
-\copy title_episode FROM 'path/to/files/title.episode.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy title_ratings FROM 'path/to/files/title.ratings.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy name_basics FROM 'path/to/files/name.basics.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy title_akas FROM 'path/to/files/title.akas.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy title_basics FROM 'path/to/files/title.basics.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy title_crew FROM 'path/to/files/title.crew.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
-\copy title_principals FROM 'path/to/files/title.principals.tsv' WITH (FORMAT text, DELIMITER E'\t', HEADER true)
+### STEP 3
 
-(you can also find them in ```copy_db``` file)
+Run first ```title_basics improvement.sql``` and after ```name_basics improvement.sql```
 
+### STEP 4
+Run ```title_akas improvement.sql``` ```title_crew improvement.sql``` ```title_episode improvement.sql``` ```title_principals improvement.sql``` ```title_ratings improvement.sql``` in any order

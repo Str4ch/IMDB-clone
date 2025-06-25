@@ -1,6 +1,6 @@
 create table name_basics(
 	nconst varchar,
-	primaryName	varchar,
+	primaryName varchar,
 	birthYear varchar,
 	deathYear varchar, 
 	primaryProfession varchar,
@@ -53,7 +53,7 @@ create table title_principals(
 );
 
 create table title_ratings(
-	tconst varchar primary key,
+	tconst varchar,
 	averageRating float,
 	numVotes int
 );
