@@ -16,3 +16,10 @@ FOREIGN KEY (tconst) REFERENCES title_basics(tconst);
 ALTER TABLE title_principals
 ADD CONSTRAINT fk_nconst
 FOREIGN KEY (nconst) REFERENCES name_basics(nconst);
+
+CREATE INDEX IF NOT EXISTS idx_title_principals_tconst ON title_principals(tconst);
+
+CREATE INDEX IF NOT EXISTS idx_title_principals_nconst ON title_principals(nconst);
+
+CREATE INDEX IF NOT EXISTS idx_title_principals_category ON title_principals(category);
+
